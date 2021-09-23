@@ -134,6 +134,24 @@
     text-align: center;
     text-decoration: none;
 }
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: lateral_movement 3s 2 alternate linear forwards;
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: lateral_movement 3s 2 alternate-reverse linear;
+}
+
+@keyframes lateral_movement {
+    from {
+        left: 10%;
+    }
+    to {
+        left: calc(90% - 60px);
+    }
+}
+
 .ex-12-top-white, .ex-13-top-white {
     position: absolute;
     top: -10px;
@@ -141,11 +159,12 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+    /* transition: all .2s ease-in-out; */
 }
 .ex-12-bottom-white, .ex-13-bottom-white {
     position: absolute;
     bottom: -10px;
-    right: 20%;
+    right: 10%;
     background: #f5f5f5;
     width: 60px;
     height: 20px;
