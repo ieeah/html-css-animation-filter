@@ -13,11 +13,11 @@
     width: 100px;
     height: 100px;
     background: red;
-    transition: transform linear 2s;
+    transition: width ease-in 2s;
 }
 
-.ex-2-square:hover {
-    transform: scale(5, 3);
+.ex-2-square:active {
+    width: 100%;
 }
 
 .ex-3-square {
